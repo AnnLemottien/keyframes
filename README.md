@@ -13,7 +13,7 @@ These animated keyframes were created while improving my practical skills in fro
 https://annlemottien.github.io/keyframes/
 
 ## Screenshots
-![screenshot](screenshot.jpg)
+![screenshot](screenshot/screenshot.jpg)
 
 ## Technologies
 Project is created with:
