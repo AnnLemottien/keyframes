@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Ćwiczenie Keyframes</title>
+        <style>
+            *{
+                font-family: Calibri, sans-serif;
+            }
+
+            .square-1{
+                width: 100px;
+                height: 100px;
+                background: #f00;
+                position: relative;
+                float: left;
+                animation: myMove 5s infinite;
+            }
+
+            .square-2{
+                width: 100px;
+                height: 100px;
+                background: #0f0;
+                position: relative;
+                float: left;
+                cursor: pointer;
+            }
+
+            .square-3{
+                width: 100px;
+                height: 100px;
+                background: #00f;
+                position: relative;
+                float: left;
+                animation: myMove 3s infinite;
+            }
+
+            .square-4{
+                width: 100px;
+                height: 100px;
+                background: #0ff;
+                position: relative;
+                float: left;
+                cursor: pointer;
+            }
+
+            .square-5{
+                width: 100px;
+                height: 100px;
+                background: #f0f;
+                position: relative;
+                float: left;
+                cursor: pointer;
+            }
+
+            .square-2.active{
+                animation: myMove-2 2s forwards;
+            }
+
+            .square-4.active{
+                animation: myMove-2 5s forwards;
+            }
+
+            .square-5.active{
+                animation: myMove-3 10s;
+            }
+
+            @keyframes myMove{
+                0%{top: 0px;}
+                50%{top: 200px;}
+                100%{top: 0px;}
+            }
+
+            @keyframes myMove-2{
+                from{top: 0px;}
+                to{top: 200px;}
+            }
+
+            @keyframes myMove-3{
+                0%{
+                    width: 100px;
+                    height: 100px;
+                    top: 0px;
+                    left: 0px;
+                    background: #f0f;
+                }
+                50%{
+                    width: 300px;
+                    height: 500px;
+                    top: 200px;
+                    left: 150px;
+                    background: rgb(112, 0, 112);
+                }
+                60%{
+                    width: 300px;
+                    height: 500px;
+                    top: 200px;
+                    left: 300px;
+                    background: rgb(175, 134, 0);
+                }
+                80%{
+                    width: 300px;
+                    height: 500px;
+                    top: 200px;
+                    left: 300px;
+                    background: rgb(175, 134, 0);
+                }
+                100%{
+                    width: 100px;
+                    height: 100px;
+                    top: 0px;
+                    left: 0px;
+                    background: #f0f;
+                }
+            }
+
+        </style>
+    </head>
+    <body>
+        <h1>Ćwiczenie Keyframes</h1>
+
+        <div class="square-1"></div>
+        <div class="square-2"></div>
+        <div class="square-3"></div>
+        <div class="square-4"></div>
+        <div class="square-5"></div>
+
+        <script>
+
+            function classToggle(){
+                this.classList.toggle('active');
+            }
+
+            document.querySelector('.square-2').addEventListener('click', classToggle);
+            document.querySelector('.square-4').addEventListener('mouseover', classToggle);
+            document.querySelector('.square-5').addEventListener('click', classToggle);
+
+        </script>
+    </body>
+</html>
