@@ -7,7 +7,7 @@
 * [Status](#status)
 
 ## General info
-These keyframes were created while improving my practical skills in front-end web development during the "Web Design" training in which I participated.
+These animated keyframes were created while improving my practical skills in front-end web development during the "Web Design" training in which I participated.
 
 ## Link to GitHub Pages
 https://annlemottien.github.io/keyframes/
